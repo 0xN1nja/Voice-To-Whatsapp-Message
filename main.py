@@ -45,6 +45,6 @@ if __name__ == '__main__':
             hour = listen("Speak Hour...")
             speak("Tell Minute")
             minute = listen("Speak Minute...")
-            send_msg(number, message, hour, minute)
+            send_msg(number, message, int(hour), int(minute))
             speak("Message Sent")
             print("Message Was Sent Successfully!")
